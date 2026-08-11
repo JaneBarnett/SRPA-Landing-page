@@ -169,6 +169,22 @@
   .feature-card .tile-icon{width:64px; height:auto; margin-bottom:18px;}
   .feature-card h3{font-size:19px; margin-bottom:10px;}
   .feature-card p{font-size:14.5px; color:var(--ink-soft);}
+  .feature-card p + p{margin-top:10px;}
+  .feature-card.text-card{
+    background:none; border:none; box-shadow:none;
+    display:flex; flex-direction:column; justify-content:center;
+    text-align:center; padding:30px 24px;
+  }
+  .feature-card.text-card:hover{transform:none; box-shadow:none;}
+  .feature-card.text-card h3{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:500;
+    color:var(--purple-deep); font-size:20px; line-height:1.3; margin-bottom:16px;
+  }
+  .feature-card.text-card .connect-lines{font-size:14px; color:var(--ink-soft); line-height:1.85;}
+  .feature-card.text-card .connect-close{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:500;
+    color:var(--purple-mid); font-size:15.5px; line-height:1.5; margin-top:14px;
+  }
   .badge-soon{
     position:absolute; top:20px; right:20px;
     background:var(--gold-soft); color:#6b4f14;
@@ -580,22 +596,24 @@
       <div class="feature-card reveal">
         <img class="tile-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1783560337/PatternCabinetSVG_c8cnhs.png" alt="Pattern Index module">
         <h3>Scan your patterns</h3>
-        <p>Photograph your pattern envelope and Sewing Room PA fills in the details for you. Brand, number and garment type from the front. Yardage, fabric requirements and notions from the back, with the ability to calculate exactly how much fabric you'll need for your individual size. Superior search and sorting capabilities save you time, sanity and money.</p>
+        <p>Scan/Photograph your pattern envelope and let Sewing Room PA do the tedious part. Brand, number and garment type from the front. Yardage, fabric requirements and notions from the back — then your collection becomes searchable, sortable and always at your fingertips. And because SRPA knows your measurements and the pattern's sizing, it calculates how much fabric you'll actually need for your size before you buy it. Superior search and sorting capabilities mean less rummaging. Fewer duplicates. Smarter fabric shopping.</p>
       </div>
       <div class="feature-card reveal">
         <img class="tile-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1783560338/FabricShelvesSVG_kehros.png" alt="Fabric Stash module">
         <h3>Build your stash</h3>
-        <p>Add your fabrics with colour and photo-only entry, or full detail tracking with a usage calculator — how much you've used, how much is left. Never get caught out with no interfacing again!</p>
+        <p>Add fabric your way. Just snap a photo and record the colour — or keep a detailed inventory with fabric type, length and usage tracking. See what you've used, what's left and what you already have before you buy more.</p>
+        <p>Because "I'm sure I have some interfacing somewhere" isn't a great shopping strategy.</p>
       </div>
       <div class="feature-card reveal">
         <img class="tile-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1783560340/HaberdasherySVG_qzragt.png" alt="Haberdashery module">
         <h3>Track your notions</h3>
-        <p>Needles, zips, thread and buttons — with quantities. So you always know what's already in the drawer, and can colour match from your phone.</p>
+        <p>Know what you've already got before you buy another packet of 20 zips. Keep track of threads, buttons, needles, zips and other essentials — including quantities and colours — so you can check your sewing room stash wherever you are.</p>
       </div>
       <div class="feature-card reveal">
         <img class="tile-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1783580366/Measurement_final_sniau3.webp" alt="Measurements module">
         <h3>Store your measurements</h3>
-        <p>Keep measurements for yourself and everyone you sew for, with photos and a growth chart for the kids and grandchildren. The fit indicator uses your own — or any client's — measurements to help you see which patterns are the best fit before you start.</p>
+        <p>Keep measurements for everyone you sew for, complete with photos and growth tracking for little ones. Then let SRPA compare those measurements with your patterns before you cut a single piece of fabric.</p>
+        <p>See at a glance which patterns are a good fit, which may need grading and which are probably better left on the shelf.</p>
       </div>
       <div class="feature-card reveal">
         <div class="status-icon-row" style="display:flex; gap:8px; margin-bottom:18px;">
@@ -606,19 +624,38 @@
           <span title="Finished" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">✅</span>
         </div>
         <h3>Track your projects</h3>
-        <p>See every project at a glance, from planning to finished make. And if you're anything like me... you'll always have a good excuse to buy another pattern! 😉</p>
+        <p>From "I really should make this" to finished and photographed, keep every project in one place. See what's planned, what's cut, what's being sewn, what's waiting for a fitting and what's finally finished.</p>
+        <p>No more wondering "What was I doing with that project?"</p>
+        <p>Although we make no promises about helping you resist starting three more. 😉</p>
       </div>
       <div class="feature-card reveal">
         <span class="badge-soon">Coming soon</span>
         <img class="tile-icon" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1783560340/machine_icon_pctfeo.png" alt="Sewing machine icon">
         <h3>Sew What?</h3>
-        <p>Found the perfect fabric? Sew What? instantly shows you every pattern in your collection that's suitable for it, in your size. No more guessing. No more treasure hunts.</p>
+        <p>Found the perfect fabric but don't know what to make with it?</p>
+        <p>Sew What? does the treasure hunt for you. It looks through your pattern collection and shows you the patterns that work with your fabric — in your size.</p>
+        <p>One piece of fabric. Your entire pattern collection. Now what will you make?</p>
       </div>
       <div class="feature-card reveal">
         <span class="badge-soon">Coming soon</span>
         <img class="tile-icon" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1783560338/stall_icon_djsym8.png" alt="Market stall icon">
         <h3>Destash Shop</h3>
-        <p>Ready to part with a few patterns or fabrics? Simply select what you'd like to sell and Sewing Room PA creates your shop for you. Share one link with family, friends or social media—no more creating listings one by one.</p>
+        <p>Got patterns or fabric you're ready to let go of?</p>
+        <p>Select what you're selling and Sewing Room PA creates your shop for you. Share one simple link with friends, family or social media and let buyers browse everything you're selling in one place.</p>
+        <p>Finally, destashing doesn't have to become another project.</p>
+      </div>
+      <div class="feature-card text-card reveal">
+        <h3>Everything in your sewing room.<br>Finally connected.</h3>
+        <p class="connect-lines">
+          Your patterns know what fabric they need.<br>
+          Your stash knows what's been used.<br>
+          Your measurements know what will fit.<br>
+          Your projects know what's being made.
+        </p>
+        <p class="connect-close">
+          And Sewing Room PA brings it all together.<br>
+          Less searching. Less guessing. More sewing.
+        </p>
       </div>
     </div>
   </div>
