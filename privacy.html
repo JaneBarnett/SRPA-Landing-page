@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Sewing Room PA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF7F0;
+    --ink:#2B2440;
+    --ink-soft:#5B4E70;
+    --purple-deep:#3A1E5A;
+    --purple-mid:#7A4A9B;
+    --lavender:#F3EAFF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Work Sans', sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+    padding:60px 20px 100px;
+  }
+  .wrap{max-width:720px; margin:0 auto;}
+  .page-header{text-align:center; margin-bottom:28px;}
+  .logo-img{height:64px; width:auto; margin-bottom:16px;}
+  h1{font-family:'Fraunces', serif; font-style:italic; font-weight:600; color:var(--purple-mid); font-size:26px; margin-bottom:10px;}
+  .meta{font-size:13px; color:var(--ink-soft);}
+  .meta a{color:var(--purple-mid); text-decoration:underline;}
+  hr{border:none; border-top:1px solid var(--lavender); margin:26px 0 34px;}
+  details{border-bottom:1px solid var(--lavender); padding:16px 0;}
+  details:first-of-type{border-top:1px solid var(--lavender);}
+  summary{
+    font-family:'Fraunces', serif; font-weight:600; font-size:17px; color:var(--purple-deep);
+    cursor:pointer;
+  }
+  summary::marker{color:var(--purple-mid);}
+  .legal-body{padding:14px 4px 4px 22px; font-size:15px;}
+  .legal-body p{margin-bottom:12px;}
+  .legal-body ul{margin:0 0 12px 20px;}
+  .legal-body li{margin-bottom:8px;}
+  .back-link{display:inline-block; margin-top:48px; font-size:14px; color:var(--purple-mid); text-decoration:underline;}
+  footer{text-align:center; margin-top:8px; font-size:13px; color:var(--ink-soft);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="page-header">
+    <img class="logo-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1786714658/SewingRoomPA_transparent_wuczmn.webp" alt="Sewing Room PA">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: 16 August 2026 &nbsp;|&nbsp; <a href="https://sewingroompa.com">sewingroompa.com</a> &nbsp;|&nbsp; <a href="mailto:hello@sewingroompa.com">hello@sewingroompa.com</a></p>
+  </div>
+
+  <hr>
+
+  <details>
+    <summary>1. Who we are</summary>
+    <div class="legal-body">
+      <p>Sewing Room PA (“we”, “us”, “the app”) is a sewing studio management app, built and run by its founder in Western Australia. This policy explains what personal information we collect, why, and how we protect it. We follow the Australian Privacy Principles under the Privacy Act 1988 (Cth), and aim to be honest with you in plain English.</p>
+      <p>Contact: <a href="mailto:hello@sewingroompa.com" style="color:var(--purple-mid);">hello@sewingroompa.com</a></p>
+    </div>
+  </details>
+
+  <details>
+    <summary>2. What we collect</summary>
+    <div class="legal-body">
+      <ul>
+        <li>Account information — your email address, used to sign you in with a one-time code. There's no password, so we never see or store one.</li>
+        <li>Your sewing content — the patterns, fabric, notions, measurements, notes, prices and photos you add. This is your data; we store it so the app can show it back to you.</li>
+        <li>Pattern envelope scans — the envelopes you scan (in Notes or Google Drive) so SRPA can read the printed details.</li>
+        <li>Photos — fabric and finished garments that you choose to upload.</li>
+        <li>Other people's details — if you store measurement profiles for family, friends or clients, you're responsible for making sure you have their permission first. Their information is protected exactly the same way as yours — visible only to your account, never shared.</li>
+        <li>Payment information — handled directly by Stripe. We never see or store your card details, only a record of what you purchased.</li>
+        <li>Basic technical information — standard server logs (errors, request info) needed to keep the app running securely.</li>
+      </ul>
+      <p>We don't collect more than we need, we don't sell your information, and we don't show advertising.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>3. Your content is yours</summary>
+    <div class="legal-body">
+      <p>Everything you upload — patterns, photos, measurements, notes — stays yours. We store and process it only to run the app for you. SRPA reading your pattern scan doesn't transfer ownership of your scan or data to anyone.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>4. How SRPA reads your patterns</summary>
+    <div class="legal-body">
+      <p>When you scan a pattern envelope (in Notes or Google Drive), SRPA reads the printed details and fills in your pattern card. Behind the scenes, this uses Anthropic's Claude AI models — Anthropic doesn't use this data to train its models, and your email or account identity isn't included in that request, just the image needed to read the pattern. Envelope scans are also stored with our photo host so they can appear on your pattern cards.</p>
+      <p>Details SRPA reads can occasionally be wrong — always check anything important, like fabric requirements, against your original pattern.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>5. Who helps us run the app</summary>
+    <div class="legal-body">
+      <p>We use a small number of trusted providers, each receiving only what it needs to do its job:</p>
+      <ul>
+        <li>Supabase — database and sign-in</li>
+        <li>Cloudinary — photo storage</li>
+        <li>Anthropic — powers SRPA's pattern envelope reading</li>
+        <li>Resend — sign-in code emails</li>
+        <li>Stripe — payment processing</li>
+        <li>Railway — app hosting</li>
+        <li>GitHub — hosts our public website code only; no customer data is stored there</li>
+      </ul>
+      <p>Some providers store information overseas, including in the United States. By using the app you consent to this. We choose established providers with strong security practices.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>6. How we protect your information</summary>
+    <div class="legal-body">
+      <p>Your data is walled off per account at the database level — your account can only ever see its own information. Connections to the app are encrypted. Sign-in uses expiring one-time codes rather than passwords, so there's no password to steal or reuse.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>7. How long we keep it, and how to delete it</summary>
+    <div class="legal-body">
+      <p>We keep your information for as long as you have an account. You can delete individual items any time inside the app. To delete your whole account, email us at <a href="mailto:hello@sewingroompa.com" style="color:var(--purple-mid);">hello@sewingroompa.com</a> and we'll confirm once it's done. You can export your data first.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>8. Your rights</summary>
+    <div class="legal-body">
+      <p>Email <a href="mailto:hello@sewingroompa.com" style="color:var(--purple-mid);">hello@sewingroompa.com</a> any time to access, correct, or delete the information we hold about you. If we can't resolve a concern, you can complain to the Office of the Australian Information Commissioner (OAIC) at oaic.gov.au.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>9. If something goes wrong</summary>
+    <div class="legal-body">
+      <p>If a data breach happens that's notifiable under Australia's Notifiable Data Breaches scheme, we'll notify affected users and the OAIC as required.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>10. Age</summary>
+    <div class="legal-body">
+      <p>Sewing Room PA is for people aged 16 and over. We do not knowingly create accounts for anyone under 16. Measurement profiles for younger children may of course be stored by a parent, guardian or family sewist within their own account.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>11. Changes to this policy</summary>
+    <div class="legal-body">
+      <p>If we change this policy, we'll update the date at the top and, for significant changes, let you know by email or in the app.</p>
+    </div>
+  </details>
+
+  <a class="back-link" href="index.html">← Back to Sewing Room PA</a>
+
+  <footer>
+    <p>Sewing Room PA is operated from Western Australia. Contact: hello@sewingroompa.com 💜</p>
+  </footer>
+
+</div>
+</body>
+</html>
