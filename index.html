@@ -393,6 +393,9 @@
     border-top:1px solid rgba(251,247,240,0.15); padding-top:22px;
     display:flex; justify-content:space-between; font-size:12.5px; color:#C9B7DE; flex-wrap:wrap; gap:10px;
   }
+  .footer-legal{display:flex; gap:16px; flex-wrap:wrap;}
+  .footer-legal a{color:#C9B7DE; text-decoration:underline;}
+  .footer-legal a:hover{color:var(--cream);}
 
   .edit-banner{ display:none; }
 
@@ -476,7 +479,9 @@
       <p class="hero-map">Every sewing room has a story.<br>You just need a map to find the treasures.</p>
       <div class="hero-cta-row">
         <a href="https://forms.gle/Xgu8Ykf6F8LFNsWu7" class="btn btn-primary" target="_blank" rel="noopener">Try free</a>
+        <!-- Beta Signup hidden — applications closed for this round. Restore by removing this comment wrapper. Note: also re-enable "Accepting responses" on the Google Form before restoring, or reopen won't actually accept submissions.
         <a href="https://forms.gle/61PpQ3jyu2tPUciH6" class="btn btn-gold" target="_blank" rel="noopener">Beta Signup</a>
+        -->
       </div>
       <p class="hero-cta-note">No credit card. No pressure. Just get sorted.</p>
     </div>
@@ -838,7 +843,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>sewingroompa.com · @sewingroompa</span>
+      <span>sewingroompa.com · @sewingroompa · <a href="mailto:hello@sewingroompa.com" style="color:#C9B7DE;">hello@sewingroompa.com</a></span>
+      <div class="footer-legal">
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
       <span>© 2026 Sewing Room PA</span>
     </div>
   </div>
