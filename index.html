@@ -220,29 +220,6 @@
     font-size:14.5px; line-height:1.4; color:var(--purple-deep);
   }
 
-  /* Drawer Story */
-  .drawer-story{
-    max-width:680px; margin:0 auto;
-    display:flex; align-items:center; gap:36px; text-align:left;
-  }
-  .drawer-story .drawer-photo{
-    width:210px; flex-shrink:0; border-radius:24px;
-    box-shadow:0 20px 40px rgba(58,30,90,0.18);
-    margin:0; display:block;
-  }
-  .drawer-story .story-text{flex:1;}
-  @media (max-width:680px){
-    .drawer-story{flex-direction:column; text-align:center;}
-    .drawer-story .drawer-photo{margin:0 auto 30px;}
-  }
-  .drawer-story .story-line{
-    font-family:'Fraunces', serif; font-size:19px; line-height:1.9; color:var(--ink-soft);
-  }
-  .drawer-story .story-turn{
-    font-family:'Fraunces', serif; font-style:italic; font-weight:500;
-    color:var(--purple-deep); font-size:24px; line-height:1.5; margin-top:30px;
-  }
-
   /* How it works */
   .video-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
   .video-card{
@@ -340,19 +317,21 @@
   }
 
   .bundle-table{
-    width:100%; border-collapse:collapse; background:var(--cream);
-    border-radius:var(--radius); overflow:hidden; border:1px solid var(--lavender-2);
+    width:100%; max-width:520px; margin:0 auto; border-collapse:collapse; background:var(--cream);
+    border-radius:12px; overflow:hidden; border:1px solid var(--lavender-2);
   }
   .bundle-table th{
-    background:var(--purple-deep); color:var(--cream); font-weight:600; font-size:13.5px;
-    text-transform:uppercase; letter-spacing:0.04em; padding:14px 18px; text-align:left;
+    background:var(--lavender); color:var(--purple-deep); font-weight:600; font-size:11px;
+    text-transform:uppercase; letter-spacing:0.04em; padding:8px 14px; text-align:left;
   }
-  .bundle-table td{padding:14px 18px; font-size:15px; border-top:1px solid var(--lavender-2);}
-  .bundle-table tr:nth-child(2) td{font-weight:700; color:var(--purple-deep);}
+  .bundle-table td{padding:7px 14px; font-size:13px; color:var(--ink-soft); border-top:1px solid var(--lavender-2);}
+  .bundle-table td:first-child, .bundle-table td:nth-child(2){color:var(--ink); font-weight:500;}
+  .bundle-table td:last-child{font-style:italic; color:var(--purple-mid);}
 
   .honesty-note{
-    margin-top:34px; background:var(--lavender); border-left:3px solid var(--purple-mid);
-    border-radius:0 14px 14px 0; padding:20px 26px; font-style:italic; font-size:14.5px; color:var(--ink-soft);
+    margin-top:20px; max-width:520px; margin-left:auto; margin-right:auto;
+    background:var(--lavender); border-left:2px solid var(--purple-mid);
+    border-radius:0 10px 10px 0; padding:12px 18px; font-style:italic; font-size:12.5px; color:var(--ink-soft);
   }
 
   /* FAQ */
@@ -475,8 +454,7 @@
     <div>
       <!-- Eyebrow removed for now pending final pricing model decision. Restore: <span class="eyebrow"><span class="tick"></span>No subscription. Ever.</span> -->
       <h1>Meet the Personal Assistant your sewing room deserves.</h1>
-      <p class="hero-h2">Your patterns, projects, fabric and measurements—beautifully organised, in one afternoon. Never lost and always close at hand.</p>
-      <p class="hero-map">Every sewing room has a story.<br>You just need a map to find the treasures.</p>
+      <p class="hero-h2">Your patterns, fabric, notions and measurements, beautifully organised and always close at hand.</p>
       <div class="hero-cta-row">
         <a href="https://forms.gle/Xgu8Ykf6F8LFNsWu7" class="btn btn-primary" target="_blank" rel="noopener">Try free</a>
         <!-- Beta Signup hidden — applications closed for this round. Restore by removing this comment wrapper. Note: also re-enable "Accepting responses" on the Google Form before restoring, or reopen won't actually accept submissions.
@@ -502,7 +480,7 @@
 <section id="problem">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow"><span class="tick"></span>You're not alone</span>
+      <span class="eyebrow">You're not alone</span>
       <h2>Sound familiar?</h2>
       <p style="font-size:17px; color:var(--ink-soft); margin-top:14px;">We've all been here. Too much choice, not enough clarity.</p>
     </div>
@@ -523,33 +501,7 @@
         <p>What size 10 pants patterns do I have that would suit that gorgeous wool blend?</p>
       </div>
     </div>
-  </div>
-</section>
-
-<div class="seam"><svg preserveAspectRatio="none" viewBox="0 0 1200 28"><line x1="0" y1="14" x2="1200" y2="14" stroke="var(--purple-mid)" stroke-width="1.5" stroke-dasharray="9 8" opacity="0.45"/></svg></div>
-
-<!-- DRAWER STORY -->
-<section id="drawer-story">
-  <div class="wrap">
-    <div class="section-head reveal" style="margin-bottom:36px;">
-      <h2>The problem isn't the mess...</h2>
-    </div>
-    <div class="drawer-story reveal">
-      <img class="drawer-photo" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1786333537/drawer-photo_q9ijfv.webp" alt="An open wooden drawer of vintage sewing patterns, unfolded tissue paper and fabric scraps">
-      <div class="story-text">
-        <p class="story-line">
-          The drawer was never going to stay tidy.<br>
-          You unfold the tissue.<br>
-          Trace your size.<br>
-          Stuff everything back into the envelope.<br>
-          Just like a map, once opened they never quite fold the same again.
-        </p>
-        <p class="story-turn">
-          The drawer doesn't need to be beautiful.<br>
-          It just needs an index that remembers what's behind it.
-        </p>
-      </div>
-    </div>
+    <p class="hero-map" style="max-width:none; margin:28px auto 0; text-align:center;">Let Sewing Room PA carry the load and be your index.</p>
   </div>
 </section>
 
@@ -559,12 +511,10 @@
 <section id="solution" class="band-lavender">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow"><span class="tick"></span>What it does</span>
+      <span class="eyebrow">What it does</span>
       <h2>Stop digging through boxes. Start scrolling your phone.</h2>
-      <p style="font-size:17px; color:var(--ink-soft); margin-top:14px;">Never wonder "Will I have enough?" again. Match fabric to your patterns and buy with confidence.</p>
     </div>
     <div class="section-head reveal" style="margin-top:48px;">
-      <span class="eyebrow"><span class="tick"></span>See it in action</span>
       <h2 style="font-size:clamp(24px,3vw,30px);">Scan, Sort, Sew!</h2>
       <p class="hero-map" style="max-width:none;">Catalogue up to 200 front patterns in a single sitting.</p>
     </div>
@@ -600,73 +550,58 @@
 <section id="modules">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow"><span class="tick"></span>What's inside</span>
+      <span class="eyebrow">What's inside</span>
       <h2>Everything your sewing room needs, in one place.</h2>
     </div>
     <div class="feature-grid">
       <div class="feature-card reveal">
         <img class="tile-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1786716100/PatternCabinetSVG_3_x4455d.webp" alt="Pattern Index module">
-        <h3>Scan your patterns</h3>
-        <p>Scan your pattern envelope and let SRPA do the tedious part. Brand, number and garment type from the front. Yardage, fabric requirements and notions from the back — then your collection becomes searchable, sortable and always at your fingertips. And because SRPA knows your measurements and the pattern's sizing, it calculates how much fabric you'll actually need for your size before you buy it. Superior search and sorting capabilities mean less rummaging. Fewer duplicates. Smarter fabric shopping.</p>
+        <h3>Patterns</h3>
+        <p>Scan the envelope, SRPA does the work for you. Front for brand, number and garment type; back for fabric, notions and yardage so your whole collection is finally searchable.</p>
       </div>
       <div class="feature-card reveal">
         <img class="tile-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1786715171/FabricShelvesSVG_elyoa8.webp" alt="Fabric Stash module">
-        <h3>Build your stash</h3>
-        <p>Add fabric your way. Just snap a photo and record the colour — or keep a detailed inventory with fabric type, length and usage tracking. See what you've used, what's left and what you already have before you buy more.</p>
-        <p>Because "I'm sure I have some interfacing somewhere" isn't a great shopping strategy.</p>
+        <h3>Fabric</h3>
+        <p>Snap a photo, add in bulk to catalogue your fabrics. Note only basics or go deep with type, length and usage. No more guessing what you need.</p>
       </div>
       <div class="feature-card reveal">
         <img class="tile-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1786715175/HaberdasherySVG_jmhujj.webp" alt="Haberdashery module">
-        <h3>Track your notions</h3>
-        <p>Know what you've already got before you buy another packet of 20 zips. Keep track of threads, buttons, needles, zips and other essentials — including quantities and colours — so you can check your sewing room stash wherever you are.</p>
+        <h3>Notions</h3>
+        <p>Trims, threads, needles, zips &amp; buttons. Know what you've already got before you buy your 6th roll of black overlocking thread.</p>
       </div>
       <div class="feature-card reveal">
         <img class="tile-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1783580366/Measurement_final_sniau3.webp" alt="Measurements module">
-        <h3>Store your measurements</h3>
-        <p>Keep measurements for everyone you sew for, complete with photos and growth tracking for little ones. Then let SRPA compare those measurements with your patterns before you cut a single piece of fabric.</p>
-        <p>See at a glance which patterns are a good fit, which may need grading and which are probably better left on the shelf.</p>
+        <h3>Measurements</h3>
+        <p>Keep everyone's measurements on hand, photos included, growth tracked for the little ones. Then let SRPA tell you which patterns will actually fit before you cut.</p>
       </div>
       <div class="feature-card reveal">
-        <div class="status-icon-row" style="display:flex; gap:8px; margin-bottom:18px;">
-          <span title="Planned" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">📝</span>
-          <span title="Cutting" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">✂️</span>
-          <span title="Sewing" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">🧵</span>
-          <span title="Fitting" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">📏</span>
-          <span title="Finished" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">✅</span>
+        <div class="status-icon-row" style="display:flex; gap:8px; margin-bottom:18px; flex-wrap:wrap;">
+          <span title="Wishlist" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">💜</span>
+          <span title="Fabric Sourced" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">🧵</span>
+          <span title="Cut Out" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">✅</span>
+          <span title="In Progress" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">🪡</span>
+          <span title="Finished" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">🎉</span>
+          <span title="Gifted" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">🎁</span>
+          <span title="Sold" style="width:30px; height:30px; border-radius:50%; background:var(--lavender-2); display:flex; align-items:center; justify-content:center; font-size:15px;">💰</span>
         </div>
-        <h3>Track your projects</h3>
-        <p>From "I really should make this" to finished and photographed, keep every project in one place. See what's planned, what's cut, what's being sewn, what's waiting for a fitting and what's finally finished.</p>
-        <p>No more wondering "What was I doing with that project?"</p>
-        <p>Although we make no promises about helping you resist starting three more. 😉</p>
+        <h3>Projects</h3>
+        <p>See what's planned, cut, sewing, or finished, all in one place, at a glance.</p>
       </div>
       <div class="feature-card reveal">
         <span class="badge-soon">Coming soon</span>
         <img class="tile-icon" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1783560340/machine_icon_pctfeo.png" alt="Sewing machine icon">
         <h3>Sew What?</h3>
-        <p>Found the perfect fabric but don't know what to make with it?</p>
-        <p>Sew What? does the treasure hunt for you. It looks through your pattern collection and shows you the patterns that work with your fabric — in your size.</p>
-        <p>One piece of fabric. Your entire pattern collection. Now what will you make?</p>
+        <p>Found a pattern you love, Sew What? searches your fabric for best matches and vice versa.</p>
       </div>
       <div class="feature-card reveal">
         <span class="badge-soon">Coming soon</span>
         <img class="tile-icon" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1783560338/stall_icon_djsym8.png" alt="Market stall icon">
         <h3>Destash Shop</h3>
-        <p>Got patterns or fabric you're ready to let go of?</p>
-        <p>Select what you're selling and Sewing Room PA creates your shop for you. Share one simple link with friends, family or social media and let buyers browse everything you're selling in one place.</p>
-        <p>Finally, destashing doesn't have to become another project.</p>
+        <p>Ready to let go of patterns or fabric? Select what you're selling and share one link. That's it! Sew easy!</p>
       </div>
       <div class="feature-card text-card reveal">
-        <h3>Everything in your sewing room.<br>Finally connected.</h3>
-        <p class="connect-lines">
-          Your patterns know what fabric they need.<br>
-          Your stash knows what's been used.<br>
-          Your measurements know what will fit.<br>
-          Your projects know what's being made.
-        </p>
-        <p class="connect-close">
-          And Sewing Room PA brings it all together.<br>
-          Less searching. Less guessing. More sewing.
-        </p>
+        <h3>Sewing Room PA finally connects everything in your sewing room.</h3>
+        <p class="connect-close">Less searching. Less guessing. More sewing.</p>
       </div>
     </div>
   </div>
@@ -674,11 +609,70 @@
 
 <div class="seam"><svg preserveAspectRatio="none" viewBox="0 0 1200 28"><line x1="0" y1="14" x2="1200" y2="14" stroke="var(--purple-mid)" stroke-width="1.5" stroke-dasharray="9 8" opacity="0.45"/></svg></div>
 
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2>Simple, fair pricing.</h2>
+      <p style="color:var(--ink-soft); font-size:13.5px; font-style:italic; margin-top:10px;">Pricing shown reflects what we're testing during beta. Final pricing will be confirmed at launch.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <div class="price-tag">Free</div>
+        <h3>Try it out</h3>
+        <div class="price-amount">$0</div>
+        <p style="color:var(--ink-soft); font-size:14.5px;">Try 20 scans before you commit. That's enough to feel the magic.</p>
+        <ul class="price-list">
+          <li>Use for front or back or any mix, your choice</li>
+          <li>All modules included: Pattern Collection, Fabric Stash, Notions, Measurements</li>
+          <li>No credit card needed</li>
+        </ul>
+      </div>
+      <div class="price-card highlight reveal">
+        <div class="price-tag">Join</div>
+        <h3>SRPA Circle</h3>
+        <div class="price-amount">$39 <span>once-off cost</span></div>
+        <ul class="price-list">
+          <li>200 scan credits included, use for front or back or any mix, your choice</li>
+          <li>Top up anytime with credit bundles if/when you need more</li>
+          <li>All modules included: Pattern Collection, Fabric Stash, Notions, Measurements (10 profiles)</li>
+          <li>Advance notice when Shop and Sew What launch</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-head reveal" style="margin-bottom:18px;">
+      <h2 style="font-size:16px; color:var(--ink-soft); font-family:'Work Sans', sans-serif; font-weight:600;">Top up when you need to</h2>
+      <p style="color:var(--ink-soft); font-size:12.5px; margin-top:4px;">Available once you've joined. Credits never expire.</p>
+    </div>
+    <table class="bundle-table reveal">
+      <thead><tr><th>Credits</th><th>Price</th><th>Because...</th></tr></thead>
+      <tbody>
+        <tr><td>50</td><td>$6</td><td>A few strays you forgot about</td></tr>
+        <tr><td>100</td><td>$11</td><td>The "just one more drawer" top-up</td></tr>
+        <tr><td>200</td><td>$19</td><td>The stash is now officially a collection</td></tr>
+        <tr><td>300</td><td>$26</td><td>Serious hoarder energy</td></tr>
+        <tr><td>400</td><td>$33</td><td>You've stopped counting. So have we</td></tr>
+        <tr><td>500</td><td>$39</td><td>The whole sewing room, cover to cover</td></tr>
+      </tbody>
+    </table>
+
+
+    <div class="honesty-note reveal">
+      Every scan SRPA reads uses a small amount of processing, along with photo storage. These are real costs I pay to keep the app running and improving. — Jane 💜
+    </div>
+  </div>
+</section>
+
+<div class="seam"><svg preserveAspectRatio="none" viewBox="0 0 1200 28"><line x1="0" y1="14" x2="1200" y2="14" stroke="var(--purple-mid)" stroke-width="1.5" stroke-dasharray="9 8" opacity="0.45"/></svg></div>
+
 <!-- ABOUT -->
-<section id="about" class="band-lavender">
+<section id="about">
   <div class="wrap">
     <div class="about-intro reveal">
-      <span class="eyebrow"><span class="tick"></span>Not a tech company…. we know you better 😉</span>
+      <span class="eyebrow">Not a tech company…. we know you better 😉</span>
       <h2 style="margin:14px 0 20px; font-size:clamp(26px,3vw,32px);">Built by a sewist in a sewing room.</h2>
     </div>
   </div>
@@ -719,74 +713,11 @@
 
 <div class="seam"><svg preserveAspectRatio="none" viewBox="0 0 1200 28"><line x1="0" y1="14" x2="1200" y2="14" stroke="var(--purple-mid)" stroke-width="1.5" stroke-dasharray="9 8" opacity="0.45"/></svg></div>
 
-<!-- PRICING -->
-<section id="pricing">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow"><span class="tick"></span>Simple, honest pricing</span>
-      <h2>Simple, fair pricing — no surprises.</h2>
-      <p style="color:var(--ink-soft); font-size:13.5px; font-style:italic; margin-top:10px;">Pricing shown reflects what we're testing during beta. Final pricing will be confirmed at launch.</p>
-    </div>
-
-    <div class="pricing-grid">
-      <div class="price-card reveal">
-        <div class="price-tag">Free</div>
-        <h3>Try it out</h3>
-        <div class="price-amount">$0</div>
-        <p style="color:var(--ink-soft); font-size:14.5px;">Try 20 scans before you commit. That's enough to feel the magic.</p>
-        <ul class="price-list">
-          <li>Use for front or back or any mix — your choice</li>
-          <li>All modules included — Pattern Collection, Fabric Stash, Notions, Measurements</li>
-          <li>No credit card needed</li>
-        </ul>
-      </div>
-      <div class="price-card highlight reveal">
-        <div class="price-tag">Standard</div>
-        <!-- "Pay once." hidden pending pricing model decision. Restore: Pay once. --><h3>Use it forever.</h3>
-        <div class="price-amount">TBC <span>after Beta</span></div>
-        <ul class="price-list">
-          <!-- Credit count TBC — was 100, now deciding between 200 or 300. Slot the number back in once locked. -->
-          <li>Generous scan credits included — use for front or back or any mix, your choice</li>
-          <li>Top up anytime with credit bundles if/when you need more</li>
-          <li>All modules included — Pattern Collection, Fabric Stash, Notions, Measurements (10 profiles)</li>
-          <li>Credits never expire</li>
-          <li>Advance notice when Shop and Sew What launch</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- "Top up when you need to" section head hidden pending pricing model decision — bundle table below is already hidden, so this had nothing to introduce. Restore:
-    <div class="section-head reveal" style="margin-bottom:28px;">
-      <h2 style="font-size:22px;">Top up when you need to</h2>
-      <p style="color:var(--ink-soft); font-size:13.5px; margin-top:6px;">Available to Standard members once you've made the one-time purchase. Bundle pricing will be confirmed after beta.</p>
-    </div>
-    -->
-    <!-- Bundle table hidden until pricing finalized post-beta. Restore by removing this comment wrapper.
-    <table class="bundle-table reveal">
-      <thead><tr><th>Credits</th><th>Price AUD</th><th>Use for</th></tr></thead>
-      <tbody>
-        <tr><td>25 credits</td><td>$4</td><td>A quick batch</td></tr>
-        <tr><td>50 credits ⭐ popular</td><td>$7</td><td>A good afternoon's scanning</td></tr>
-        <tr><td>100 credits</td><td>$12</td><td>A serious collection</td></tr>
-        <tr><td>200 credits</td><td>$20</td><td>The full stash</td></tr>
-      </tbody>
-    </table>
-    -->
-
-
-    <div class="honesty-note reveal">
-      Every scan SRPA reads uses a small amount of processing, along with photo storage — these are real costs I pay to keep the app running and improving. — Jane 💜
-    </div>
-  </div>
-</section>
-
-<div class="seam"><svg preserveAspectRatio="none" viewBox="0 0 1200 28"><line x1="0" y1="14" x2="1200" y2="14" stroke="var(--purple-mid)" stroke-width="1.5" stroke-dasharray="9 8" opacity="0.45"/></svg></div>
-
 <!-- FAQ -->
 <section id="faq" class="band-lavender">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow"><span class="tick"></span>FAQ</span>
+      <span class="eyebrow">FAQ</span>
       <h2>Questions sewists actually ask</h2>
     </div>
     <div class="faq-list reveal">
@@ -797,12 +728,8 @@
       </details>
       -->
       <details>
-        <summary>What if I just want to know what I own — not all the yardage detail? <span class="plus"></span></summary>
-        <p>That's completely fine — front scans are perfect for exactly that. Scan the front of every envelope for brand, number, garment type and a photo. If you ever want to unlock the extra detail the back scan brings, you can add it at any time and the backs will find their fronts!</p>
-      </details>
-      <details>
-        <summary>What does SRPA actually read? <span class="plus"></span></summary>
-        <p>Front scan — brand name, pattern number and garment type, reliably every time. Back scan — yardage requirements by size and fabric width, fabric recommendations and notions. Behind the scenes, back scans use a more powerful AI model for extra accuracy.</p>
+        <summary>What if I just want to catalogue what I own, not all the yardage and back envelope detail? <span class="plus"></span></summary>
+        <p>That's completely fine. Front scans are perfect for exactly that. Scan the front of every envelope for brand, number, garment type and a photo. If you ever want to unlock the extra detail the back scan brings, you can add it at any time and the backs will find their fronts!</p>
       </details>
       <details>
         <summary>Is my collection safe? <span class="plus"></span></summary>
@@ -810,11 +737,11 @@
       </details>
       <details>
         <summary>Does it work on Android, iPhone, desktops, PC and Macs? <span class="plus"></span></summary>
-        <p>Yes — Sewing Room PA works in any browser. No app store download needed.</p>
+        <p>Yes, Sewing Room PA works in any browser. No app store download needed.</p>
       </details>
       <details>
         <summary>What's coming next? <span class="plus"></span></summary>
-        <p>Once your patterns and fabric are sorted, you'll be able to select any you'd like to sell and share them with a link instantly. Sew What? — automatic fabric-to-pattern matching — is also on its way.</p>
+        <p>Once your patterns and fabric are sorted, you'll be able to select any you'd like to sell and share them with a link instantly. Sew What? (automatic fabric to pattern matching) is also on its way.</p>
       </details>
     </div>
   </div>
@@ -823,7 +750,6 @@
 <!-- FINAL CTA -->
 <section>
   <div class="wrap" style="text-align:center;">
-    <h2 style="font-size:clamp(24px,3vw,32px); margin-bottom:14px;">Ready to stop losing patterns in the pile?</h2>
     <p class="hero-map" style="max-width:none; margin:0 auto 26px;">We all need a little help getting life sorted.</p>
     <a href="https://forms.gle/Xgu8Ykf6F8LFNsWu7" class="btn btn-primary" target="_blank" rel="noopener">Try free</a>
   </div>
@@ -834,16 +760,18 @@
     <div class="footer-grid">
       <div>
         <div class="footer-logo">Sewing Room PA</div>
-        <p class="footer-tag">Made with love and 40+ years of experience in the sewing room. Built by a home sewist who finally got tired of not knowing what she owned — and decided to do something about it.</p>
+        <p class="footer-tag">Made with love and 40+ years of experience in the sewing room. Built by a home sewist who finally got tired of not knowing what she owned, and decided to do something about it.</p>
       </div>
+      <!-- Social icons hidden for now. Restore:
       <div class="footer-links">
         <a href="#" aria-label="Instagram">IG</a>
         <a href="#" aria-label="Facebook">FB</a>
         <a href="#" aria-label="Pinterest">PIN</a>
       </div>
+      -->
     </div>
     <div class="footer-bottom">
-      <span>sewingroompa.com · @sewingroompa · <a href="mailto:hello@sewingroompa.com" style="color:#C9B7DE;">hello@sewingroompa.com</a></span>
+      <span>sewingroompa.com · <a href="mailto:hello@sewingroompa.com" style="color:#C9B7DE;">hello@sewingroompa.com</a></span>
       <div class="footer-legal">
         <a href="terms.html">Terms &amp; Conditions</a>
         <a href="privacy.html">Privacy Policy</a>
