@@ -179,6 +179,7 @@
     text-align:center; padding:30px 24px;
   }
   .feature-card.text-card:hover{transform:none; box-shadow:none;}
+  .feature-card.text-card{grid-column:1 / -1; max-width:640px; margin:12px auto 0; padding-top:10px;}
   .feature-card.text-card h3{
     font-family:'Fraunces', serif; font-style:italic; font-weight:500;
     color:var(--purple-deep); font-size:20px; line-height:1.3; margin-bottom:16px;
@@ -599,6 +600,12 @@
         <h3>Destash Shop</h3>
         <p>Ready to let go of patterns or fabric? Select what you're selling and share one link. That's it! Sew easy!</p>
       </div>
+      <div class="feature-card reveal">
+        <span class="badge-soon">Coming soon</span>
+        <img class="tile-icon" src="data:image/webp;base64,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" alt="Embroidery machine icon">
+        <h3>Embroidery</h3>
+        <p>Every embroidery design you've bought, in one place. Search by designer, name, hoop size or theme.</p>
+      </div>
       <div class="feature-card text-card reveal">
         <h3>Sewing Room PA finally connects everything in your sewing room.</h3>
         <p class="connect-close">Less searching. Less guessing. More sewing.</p>
@@ -742,7 +749,7 @@
       </details>
       <details>
         <summary>What's coming next? <span class="plus"></span></summary>
-        <p>Once your patterns and fabric are sorted, you'll be able to select any you'd like to sell and share them with a link instantly. Sew What? (automatic fabric to pattern matching) is also on its way.</p>
+        <p>Once your patterns and fabric are sorted, you'll be able to select any you'd like to sell and share them with a link instantly. Sew What? (automatic fabric to pattern matching) and an Embroidery module for your machine embroidery designs are also on their way.</p>
       </details>
     </div>
   </div>
