@@ -49,7 +49,7 @@
   <div class="page-header">
     <img class="logo-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1786714658/SewingRoomPA_transparent_wuczmn.webp" alt="Sewing Room PA">
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 27 October 2026 &nbsp;|&nbsp; <a href="https://sewingroompa.com">sewingroompa.com</a> &nbsp;|&nbsp; <a href="mailto:hello@sewingroompa.com">hello@sewingroompa.com</a></p>
+    <p class="meta">Last updated: 31 October 2026 &nbsp;|&nbsp; <a href="https://sewingroompa.com">sewingroompa.com</a> &nbsp;|&nbsp; <a href="mailto:hello@sewingroompa.com">hello@sewingroompa.com</a></p>
   </div>
 
   <hr>
@@ -69,7 +69,7 @@
         <li>Account information — your email address, used to sign you in with a one-time code. There's no password, so we never see or store one.</li>
         <li>Your sewing content — the patterns, fabric, notions, measurements, notes, prices and photos you add. This is your data; we store it so the app can show it back to you.</li>
         <li>Pattern envelope scans — the envelopes you scan (in Notes or Google Drive) so SRPA can read the printed details.</li>
-        <li>PDF patterns — the instruction and information pages of any PDF patterns you add, so SRPA can read them. We don't keep your digital pattern pieces.</li>
+        <li>PDF patterns — your PDF file never leaves your device; SRPA opens it in your browser and never uploads or keeps it. SRPA reads the cover and up to three information pages, and keeps a small picture of the cover and of the fabric page on your pattern card, along with the details it read and the file name. Your pattern pieces are never read.</li>
         <li>Photos — fabric and finished garments that you choose to upload.</li>
         <li>Other people's details — if you store measurement profiles for family, friends or clients, you're responsible for making sure you have their permission first. Their information is protected exactly the same way as yours — visible only to your account, never shared.</li>
         <li>Payment information — handled directly by Stripe. We never see or store your card details, only a record of what you purchased.</li>
@@ -91,8 +91,8 @@
   <details>
     <summary>4. How SRPA reads your patterns</summary>
     <div class="legal-body">
-      <p>When you scan a pattern envelope (in Notes or Google Drive), SRPA reads the printed details and fills in your pattern card. Behind the scenes, this uses Anthropic's Claude AI models — Anthropic doesn't use this data to train its models, and your email or account identity isn't included in that request, just the image needed to read the pattern. Envelope scans are also stored with our photo host so they can appear on your pattern cards.</p>
-      <p>The same applies to PDF patterns you add: SRPA reads the instruction and information pages to fill in your pattern card. We keep those pages, but we don't keep your digital pattern pieces. The pages are sent to the same AI provider, without your email or account identity.</p>
+      <p>When you scan a pattern envelope (in Notes or Google Drive), SRPA reads the printed details and fills in your pattern card. Behind the scenes, this uses Anthropic's Claude AI models. Anthropic doesn't use this data to train its models, and your email or account identity isn't included in that request, just the image needed to read the pattern. Anthropic stores what's sent in the United States and deletes it within 30 days, and may access it in that time for safety and security purposes. The reading itself may happen in any country. Envelope scans are also stored with our photo host so they can appear on your pattern cards.</p>
+      <p>For PDF patterns, the file stays on your device. Only a picture and the text of the cover, the text of up to three information pages, and (if you choose Fabric Amounts) a picture of the fabric page are sent to the same AI provider, without your email or account identity. Your pattern pieces are never read or sent.</p>
       <p>Details SRPA reads can occasionally be wrong — always check anything important, like fabric requirements, against your original pattern.</p>
     </div>
   </details>
@@ -102,23 +102,23 @@
     <div class="legal-body">
       <p>We use a small number of trusted providers, each receiving only what it needs to do its job:</p>
       <ul>
-        <li>Supabase — database and sign-in</li>
-        <li>Cloudinary — photo storage</li>
-        <li>Anthropic — powers SRPA's pattern envelope reading</li>
-        <li>Resend — sign-in code emails</li>
+        <li>Supabase — database and sign-in (Tokyo, Japan)</li>
+        <li>Cloudinary — photo storage (United States)</li>
+        <li>Anthropic — powers SRPA's pattern reading (United States; reading may happen in any country)</li>
+        <li>Resend — sign-in code emails (Tokyo, Japan)</li>
         <li>Google — sign-up and application forms</li>
-        <li>Stripe — payment processing</li>
-        <li>Railway — app hosting</li>
+        <li>Stripe — payment processing (including the United States and India)</li>
+        <li>Railway — app hosting (Singapore)</li>
         <li>GitHub — hosts our public website code only; no customer data is stored there</li>
       </ul>
-      <p>Some providers store information overseas, including in the United States. By using the app you consent to this. We choose established providers with strong security practices.</p>
+      <p>These providers store information outside Australia, as listed above. By using the app you consent to this. We choose established providers with strong security practices. For more detail on what each one holds and for how long, see <a href="data.html" style="color:var(--purple-mid);">Your Data and Your Patterns</a>.</p>
     </div>
   </details>
 
   <details>
     <summary>6. How we protect your information</summary>
     <div class="legal-body">
-      <p>Your data is walled off per account at the database level — your account can only ever see its own information. Connections to the app are encrypted. Sign-in uses expiring one-time codes rather than passwords, so there's no password to steal or reuse.</p>
+      <p>Your data is walled off per account at the database level — your account can only ever see its own information. Connections to the app are encrypted, and your stored data and photos are encrypted at rest (AES-256). Sign-in uses expiring one-time codes rather than passwords, so there's no password to steal or reuse.</p>
       <p><strong>Keeping your data accurate.</strong> Because pattern details are captured automatically, we sometimes need to find and fix errors in that captured data — for example, correcting a batch of patterns affected by a misread, or repairing files affected by a technical bug. This is limited to system-generated data and technical fixes; it never extends to your own notes, edits, or uploaded content.</p>
     </div>
   </details>
@@ -126,7 +126,7 @@
   <details>
     <summary>7. How long we keep it, and how to delete it</summary>
     <div class="legal-body">
-      <p>We keep your information for as long as you have an account. You can delete individual items any time inside the app. Waitlist and application details are kept until you ask us to remove them. To delete your whole account, email us at <a href="mailto:hello@sewingroompa.com" style="color:var(--purple-mid);">hello@sewingroompa.com</a> and we'll confirm once it's done. You can export your data first.</p>
+      <p>We keep your information for as long as you have an account. You can delete individual items any time inside the app. Waitlist and application details are kept until you ask us to remove them. To delete your whole account, go to Settings and choose Delete account, or email us at <a href="mailto:hello@sewingroompa.com" style="color:var(--purple-mid);">hello@sewingroompa.com</a>. You can export your data first. Your account and photos are deleted straight away. Our own copies, including backups and logs, are gone within 7 days, and copies held by our providers within 30 days. Payment records are kept as long as the law requires for tax.</p>
     </div>
   </details>
 

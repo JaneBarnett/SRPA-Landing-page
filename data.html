@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Data and Your Patterns — Sewing Room PA</title>
+<meta name="description" content="Where Sewing Room PA keeps your information, how long, who can see it, and how your patterns are protected.">
+<style>
+  :root{
+    --cream:#FBF7F0;
+    --ink:#2B2440;
+    --ink-soft:#5B4E70;
+    --purple-deep:#3A1E5A;
+    --purple-mid:#7A4A9B;
+    --lavender:#F3EAFF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:Calibri, 'Segoe UI', Arial, sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+    padding:60px 20px 100px;
+  }
+  .wrap{max-width:720px; margin:0 auto;}
+  .page-header{text-align:center; margin-bottom:28px;}
+  .logo-img{height:64px; width:auto; margin-bottom:16px;}
+  h1{font-style:italic; font-weight:600; color:var(--purple-mid); font-size:26px; margin-bottom:10px;}
+  .meta{font-size:13px; color:var(--ink-soft);}
+  .meta a, .legal-body a, .intro a{color:var(--purple-mid); text-decoration:underline;}
+  hr{border:none; border-top:1px solid var(--lavender); margin:26px 0 30px;}
+  .intro{background:var(--lavender); border:1px solid var(--purple-mid); border-radius:10px; padding:18px 22px; margin-bottom:30px; color:var(--purple-deep); font-size:15px;}
+  .intro strong{display:block; margin-bottom:8px; font-size:16px;}
+  .intro ul{margin:0 0 0 20px;}
+  .intro li{margin-bottom:6px;}
+  details{border-bottom:1px solid var(--lavender); padding:16px 0;}
+  details:first-of-type{border-top:1px solid var(--lavender);}
+  summary{font-weight:600; font-size:17px; color:var(--purple-deep); cursor:pointer;}
+  summary::marker{color:var(--purple-mid);}
+  .legal-body{padding:14px 4px 4px 22px; font-size:15px;}
+  .legal-body p{margin-bottom:12px;}
+  .legal-body ul{margin:0 0 12px 20px;}
+  .legal-body li{margin-bottom:8px;}
+  .table-wrap{overflow-x:auto; margin:4px 0 14px;}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:460px;}
+  th, td{text-align:left; padding:8px 10px; border-bottom:1px solid var(--lavender); vertical-align:top;}
+  th{color:var(--purple-deep); background:var(--lavender); font-weight:600;}
+  /* TO CONFIRM markers — remove each one (and this style) once confirmed */
+  .tbc{background:#FFF3C4; color:#6B4E00; padding:0 4px; border-radius:3px; font-size:13px; font-weight:600;}
+  .back-link{display:inline-block; margin-top:48px; font-size:14px; color:var(--purple-mid); text-decoration:underline;}
+  footer{text-align:center; margin-top:8px; font-size:13px; color:var(--ink-soft);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="page-header">
+    <img class="logo-img" src="https://res.cloudinary.com/sewing-room-pa/image/upload/v1786714658/SewingRoomPA_transparent_wuczmn.webp" alt="Sewing Room PA">
+    <h1>Your Data and Your Patterns</h1>
+    <p class="meta">Last updated: 31 October 2026 &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="mailto:hello@sewingroompa.com">hello@sewingroompa.com</a></p>
+  </div>
+
+  <div class="intro">
+    <strong>The short version</strong>
+    <ul>
+      <li>Your patterns, photos and measurements are kept in your own account. They are never shared, never published and never sold.</li>
+      <li>SRPA uses AI (Anthropic's Claude) to read the envelope or the information pages of a PDF and fill in your pattern card. It never reads your pattern pieces.</li>
+      <li>The pages the AI reads are not used to train it.</li>
+      <li>Below, you'll find exactly which companies help run the App, where they keep your information and for how long.</li>
+    </ul>
+  </div>
+
+  <p style="font-size:15px; margin-bottom:24px;">I'm Jane, and I built Sewing Room PA. People have rightly asked me hard questions about where their information goes, so this page answers them as plainly as I can. If anything here isn't clear, email me and I'll explain.</p>
+
+  <details open>
+    <summary>1. What SRPA reads from your patterns</summary>
+    <div class="legal-body">
+      <p><strong>How the reading works.</strong> SRPA uses an AI model, Anthropic's Claude, to read your pattern pictures and pages. It does the reading only, and it doesn't design, draw or create anything. Your name and email are never sent with the pictures.</p>
+      <p><strong>Paper patterns.</strong> When you scan a pattern envelope (in Notes or Google Drive), the AI reads the printed details and SRPA fills in your pattern card. The front and back pictures are kept on your card.</p>
+      <p><strong>PDF patterns.</strong> Your PDF file never leaves your device. SRPA opens it in your browser and never uploads or keeps it. SRPA doesn't read your whole pattern. It reads just the cover and up to three information pages, such as sizes, notions and suggested fabrics, plus a picture of the fabric page if you choose Fabric Amounts. You see exactly which pages will be read, and can change them, before anything is sent. The step-by-step sewing instructions and your pattern pieces, A0 and projector files aren't read or sent anywhere. SRPA keeps a small picture of the cover and of the fabric page on your pattern card, along with the details it read and the file name.</p>
+      <p><strong>Adding pages later.</strong> If you add pages to a PDF pattern card, a picture of each page you tick is read, and only the fabric page's picture is kept.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>2. Where your information lives</summary>
+    <div class="legal-body">
+      <p>SRPA uses a small number of established companies, and each one gets only what it needs to do its job.</p>
+      <div class="table-wrap">
+      <table>
+        <tr><th>Company</th><th>What it does</th><th>Where</th></tr>
+        <tr><td>Supabase</td><td>Your account and everything you type in (patterns, fabric, notions, measurements, notes)</td><td>Tokyo, Japan</td></tr>
+        <tr><td>Cloudinary</td><td>Your photos, including envelope and PDF cover pictures</td><td>United States</td></tr>
+        <tr><td>Anthropic (Claude)</td><td>Reads envelope pictures and PDF pages to fill in your card</td><td>Stored in the United States. The reading itself may happen in any country.</td></tr>
+        <tr><td>Railway</td><td>Runs the App</td><td>Singapore</td></tr>
+        <tr><td>Resend</td><td>Sends your sign-in codes</td><td>Tokyo, Japan</td></tr>
+        <tr><td>Stripe</td><td>Payments (I never see your card details)</td><td>Including the United States and India</td></tr>
+        <tr><td>Google</td><td>Waitlist and application forms only</td><td>Google's own data centres</td></tr>
+      </table>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>3. How long it's kept</summary>
+    <div class="legal-body">
+      <div class="table-wrap">
+      <table>
+        <tr><th>What</th><th>How long</th></tr>
+        <tr><td>Your patterns, photos, measurements and notes</td><td>Until you delete them or your account</td></tr>
+        <tr><td>Pages sent to be read (Anthropic)</td><td>Deleted within 30 days. Content flagged in a safety review can be kept for up to 2 years.</td></tr>
+        <tr><td>Your PDF files</td><td>Never uploaded or kept. They stay on your device.</td></tr>
+        <tr><td>Database backups</td><td>7 days</td></tr>
+        <tr><td>SRPA's scan records: the details the AI read and whether each scan worked, so I can fix misreads. No images.</td><td>90 days</td></tr>
+        <tr><td>SRPA's improvement records: PDF file names and page choices, and which fields people corrected after a scan (the field name only, not what was typed)</td><td>12 months</td></tr>
+        <tr><td>Server and database logs</td><td>7 days</td></tr>
+        <tr><td>Sign-in code emails (Resend)</td><td>30 days</td></tr>
+        <tr><td>Payment records (Stripe)</td><td>As long as the law requires for tax and accounting</td></tr>
+        <tr><td>Waitlist and application details</td><td>Until you ask me to remove them</td></tr>
+      </table>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>4. Who can see it</summary>
+    <div class="legal-body">
+      <ul>
+        <li><strong>You.</strong> Your account can only see its own information. No other user can see your patterns, photos or measurements.</li>
+        <li><strong>Me, only to fix things.</strong> Sometimes I need to fix data the App captured, for example a batch of misread patterns or a technical bug. That never includes your own notes, edits or uploads, and I never browse anyone's collection.</li>
+        <li><strong>The companies above.</strong> Each company sees only what it needs to do its job. Anthropic keeps what SRPA sends for 30 days and may access it for safety and security purposes. It doesn't receive your name or email.</li>
+        <li><strong>Nobody else.</strong> I don't sell your information, and there's no advertising.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>5. How it's protected</summary>
+    <div class="legal-body">
+      <ul>
+        <li>Each account is walled off at the database level, so your account can only ever see its own information.</li>
+        <li>All connections to the App are encrypted.</li>
+        <li>There are no passwords to steal or reuse. You sign in with a one-time code sent to your email.</li>
+        <li>Your account information is encrypted while it's stored (AES-256, by Supabase). Your photos are encrypted while stored too (AES-256, by Cloudinary).</li>
+        <li>SRPA's own records never store your IP address, your images or the instructions sent to the AI.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>6. Your patterns and designers' work</summary>
+    <div class="legal-body">
+      <p>Pattern designers work hard on their patterns, and SRPA is built to respect that.</p>
+      <ul>
+        <li>Your pictures stay private to your account. SRPA has no public catalogue, so nothing you add is ever shown to other people.</li>
+        <li>Pattern pieces are never read or stored.</li>
+        <li>PDF files never leave your device. They're opened in your browser and never uploaded.</li>
+        <li>SRPA keeps only what you need to find and use a pattern you own: a cover picture, a back or fabric page picture, the details read from them and, for PDFs, the file name.</li>
+        <li>Nothing you add is used to train the AI.</li>
+        <li>Your patterns remain yours, and their designs remain the designers'.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>7. AI training</summary>
+    <div class="legal-body">
+      <p>Anthropic's terms for business customers say it does not use what's sent to train its AI models. I've checked SRPA's settings: feedback to Anthropic is switched off, and SRPA isn't part of any program that shares data for training. If that ever changes, I'll tell you first.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>8. If something goes wrong</summary>
+    <div class="legal-body">
+      <p>If there's a data breach that's notifiable under Australia's Notifiable Data Breaches scheme, I'll tell the people affected and the Office of the Australian Information Commissioner (OAIC), and explain what happened and what I'm doing about it.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>9. If a company changes its terms</summary>
+    <div class="legal-body">
+      <p>Companies change their terms, and technology changes too. I check the terms of the companies above, and I'll update this page when something changes. If a change affects your information in a meaningful way, I'll tell you by email before it applies to you wherever I can. If a company stops meeting the standards on this page, I'll look for a replacement.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>10. Deleting your information</summary>
+    <div class="legal-body">
+      <p>You can delete any pattern, photo or measurement in the App at any time. To delete your whole account, go to <strong>Settings</strong> and choose <strong>Delete account</strong>, or email <a href="mailto:hello@sewingroompa.com">hello@sewingroompa.com</a> and I'll do it for you.</p>
+      <p>Your account and photos are deleted straight away. SRPA's own copies, including backups and logs, are gone within 7 days. Everything held by the companies above is gone within 30 days. The only exception is payment records, which the law requires me and Stripe to keep for tax.</p>
+    </div>
+  </details>
+
+  <a class="back-link" href="index.html">← Back to Sewing Room PA</a>
+
+  <footer>
+    <p>Sewing Room PA is operated from Western Australia. Questions? hello@sewingroompa.com 💜</p>
+  </footer>
+
+</div>
+</body>
+</html>
